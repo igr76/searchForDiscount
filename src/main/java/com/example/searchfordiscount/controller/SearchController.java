@@ -36,6 +36,7 @@ public class SearchController {
     public ResponseEntity<String> getDiscount(
             @RequestBody
             @NotBlank(message = "newPassword не должен быть пустым")String discount) {
+
         log.info("service start");
         return ResponseEntity.ok(discount);
     }
