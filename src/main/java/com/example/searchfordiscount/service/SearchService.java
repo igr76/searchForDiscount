@@ -28,27 +28,27 @@ public class SearchService {
         for (int i = 3; i < array.size() - 1; i++) {
             //поиск совпадений скидка __ процентов
             if (array.get(i - 2) == -1 && array.get(i - 1) > -1 && array.get(i) == -2) {
-                i=i+3; text = text +"скидкa"+array.get(i - 1)+"процентов ,";
+                i=i+3; text = text +"скидкa "+array.get(i - 1)+" процентов ,";
             }
             // поиск совпадений __ скидка  процентов
             if ( array.get(i - 2) > -1 && array.get(i - 1) == -1 && array.get(i) == -2) {
-                i=i+3; text = text +"скидкa"+array.get(i - 2)+"процентов ,";
+                i=i+3; text = text +"скидкa "+array.get(i - 2)+" процентов ,";
             }
             // поиск совпадений  процентов скидка __
             if ( array.get(i-2) == -2 && array.get(i - 1) == -1 && array.get(i) > -1) {
-                i=i+3; text = text +"скидкa"+array.get(i - 2)+"процентов ,";
+                i=i+3; text = text +"скидкa "+array.get(i - 2)+" процентов ,";
             }
             // поиск совпадений  процентов __ скидка
             if ( array.get(i-2) == -2 && array.get(i-1) > -1 && array.get(i ) == -1 ) {
-                i=i+3; text = text +"скидкa"+array.get(i - 2)+"процентов ,";
+                i=i+3; text = text +"скидкa "+array.get(i - 2)+" процентов ,";
             }
             // поиск совпадений  скидка процентов __
             if ( array.get(i-2) == -1 && array.get(i-1) == -2 && array.get(i) > -1 ) {
-                i=i+3; text = text +"скидкa"+array.get(i - 2)+"процентов ,";
+                i=i+3; text = text +"скидкa "+array.get(i - 2)+" процентов ,";
             }
             // поиск совпадений  __ процентов скидка
             if ( array.get(i-2) > -1 && array.get(i - 1) == -2 && array.get(i) == -1) {
-                i=i+3; text = text +"скидкa"+array.get(i - 2)+"процентов ,";
+                i=i+3; text = text +"скидкa "+array.get(i - 2)+" процентов ,";
             }
         }
         return text;
